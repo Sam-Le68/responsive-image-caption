@@ -32,15 +32,10 @@ img {
   margin: 0;
 }
 
-.box {
+.content {
   padding: 1.5rem;
   width: 100%;
   background-color: #e2e2e2;
-}
-
-.content {
-  display: block;
-  margin: 0;
 }
 
 h1 {
@@ -67,28 +62,32 @@ p {
 
   html {
     font-size: 120%;
-    line-height: 1.5%;
-  }
-
-  body {
-    position: relative;
-    overflow: hidden;
-    display: flex;
+    line-height: 1.5;
   }
 
   .box {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .content {
     position: absolute;
-    display: flex;
     bottom: 2rem;
     right: 2rem;
     display: inline-block;
     background-color: rgba(0, 0, 0, .3);
-    width: 40%;
-    padding: 0;
+    width: 40em;
+    color: white;
+    border-radius: 10px;
   }
 
-  .content {
-    color: white;
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
   }
 
 }
